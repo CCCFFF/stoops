@@ -1,4 +1,7 @@
 Stoops::Application.routes.draw do
+
+root 'homes#index'
+
   resources :bar_menu_items
 
   resources :kitchen_menu_items
@@ -49,7 +52,7 @@ Stoops::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
