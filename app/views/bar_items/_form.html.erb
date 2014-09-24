@@ -1,0 +1,29 @@
+<%= form_for(@bar_item) do |f| %>
+  <% if @bar_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bar_item.errors.count, "error") %> prohibited this bar_item from being saved:</h2>
+
+      <ul>
+      <% @bar_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ticket_id %><br>
+    <%= f.number_field :ticket_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bar_menu_item_id %><br>
+    <%= f.number_field :bar_menu_item_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bar_closeout %><br>
+    <%= f.check_box :bar_closeout %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

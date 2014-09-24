@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ticket:</strong>
+  <%= @bar_item.ticket_id %>
+</p>
+
+<p>
+  <strong>Bar menu item:</strong>
+  <%= @bar_item.bar_menu_item_id %>
+</p>
+
+<p>
+  <strong>Bar closeout:</strong>
+  <%= @bar_item.bar_closeout %>
+</p>
+
+<%= link_to 'Edit', edit_bar_item_path(@bar_item) %> |
+<%= link_to 'Back', bar_items_path %>

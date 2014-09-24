@@ -1,0 +1,29 @@
+<h1>Listing kitchen_menu_items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kitchen_menu_items.each do |kitchen_menu_item| %>
+      <tr>
+        <td><%= kitchen_menu_item.name %></td>
+        <td><%= kitchen_menu_item.price %></td>
+        <td><%= link_to 'Show', kitchen_menu_item %></td>
+        <td><%= link_to 'Edit', edit_kitchen_menu_item_path(kitchen_menu_item) %></td>
+        <td><%= link_to 'Destroy', kitchen_menu_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kitchen menu item', new_kitchen_menu_item_path %>

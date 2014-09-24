@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kitchen menu item:</strong>
+  <%= @kitchen_item.kitchen_menu_item_id %>
+</p>
+
+<p>
+  <strong>Ticket:</strong>
+  <%= @kitchen_item.ticket_id %>
+</p>
+
+<p>
+  <strong>Kitchen closeout:</strong>
+  <%= @kitchen_item.kitchen_closeout %>
+</p>
+
+<%= link_to 'Edit', edit_kitchen_item_path(@kitchen_item) %> |
+<%= link_to 'Back', kitchen_items_path %>

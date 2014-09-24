@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  kitchen_menu_item_id: 1
+  ticket_id: 1
+  kitchen_closeout: false
+
+two:
+  kitchen_menu_item_id: 1
+  ticket_id: 1
+  kitchen_closeout: false
